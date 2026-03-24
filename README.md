@@ -37,6 +37,8 @@ Build and start with Docker Compose:
 docker compose up -d --build
 ```
 
+The container listens on port `8080` internally and is published on host port `3333` by default.
+
 Stop the container:
 
 ```bash

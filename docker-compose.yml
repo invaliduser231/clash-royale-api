@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  clash-royale-proxy:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: clash-royale-proxy
+    ports:
+      - "8080:8080"
+    environment:
+      PORT: 8080
+      ENABLE_CORS: ${ENABLE_CORS:-false}
+      BODY_LIMIT: ${BODY_LIMIT:-10mb}
+    restart: unless-stopped

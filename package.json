@@ -1,0 +1,17 @@
+{
+  "name": "clash-royale-proxy",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Minimal reverse proxy for the Clash Royale API.",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "morgan": "^1.10.0"
+  }
+}
